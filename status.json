@@ -1,0 +1,302 @@
+[
+  {
+    "patient_name": "Christopher Jenkins",
+    "error": 1,
+    "successfully_save": "no",
+    "errors": {
+      "Claims: Click Referring Physician Search": "Could not click (//input[@id='btnRefSearch'])[1]: ",
+      "Claims Processing": "Failed to process claim: "
+    }
+  },
+  {
+    "patient_name": "Christopher Jenkins",
+    "error": 1,
+    "successfully_save": "no",
+    "errors": {
+      "Claims: Click Referring Physician Search": "Could not click (//input[@id='btnRefSearch'])[1]: ",
+      "Claims Processing": "Failed to process claim: "
+    }
+  },
+  {
+    "patient_name": "",
+    "error": 1,
+    "successfully_save": "no",
+    "errors": {
+      "Unhandled_Exception": "Critical failure: \nTraceback (most recent call last):\n  File \"D:\\Sybrid\\OCR\\automation.py\", line 663, in run_automation\n    patient_name = f\"{config['patient']['first_name']} {config['patient']['last_name']}\"\nTypeError: string indices must be integers\n"
+    }
+  },
+  {
+    "patient_name": "",
+    "error": 1,
+    "successfully_save": "no",
+    "errors": {
+      "Unhandled_Exception": "Critical failure: \nTraceback (most recent call last):\n  File \"D:\\Sybrid\\OCR\\automation.py\", line 663, in run_automation\n    patient_name = f\"{config['patient']['first_name']} {config['patient']['last_name']}\"\nTypeError: string indices must be integers\n"
+    }
+  },
+  {
+    "patient_name": "Christopher Jenkinss",
+    "error": 1,
+    "successfully_save": "no",
+    "errors": {
+      "Claims: Select facility": "Could not double-click TrData0: ",
+      "Claims Processing": "Failed to process claim: "
+    }
+  },
+  {
+    "patient_name": "Christopher Jenkinss",
+    "error": 1,
+    "successfully_save": "no",
+    "errors": {
+      "Claims: Select facility": "Could not double-click TrData0: ",
+      "Claims Processing": "Failed to process claim: ",
+      "Claims: Click Facility Search": "Could not click //input[@id='btnFacSearch']: "
+    }
+  },
+  {
+    "patient_name": "Christopher Jenkins",
+    "error": 1,
+    "successfully_save": "no",
+    "errors": {
+      "Claims: Enter physician initial": "Could not enter text in //input[@id='txtSearch']: ",
+      "Claims Processing": "Failed to process claim: "
+    }
+  },
+  {
+    "patient_name": "Sophia Brady",
+    "error": 1,
+    "successfully_save": "no",
+    "errors": {
+      "Claims: Enter physician initial": "Could not enter text in //input[@id='txtSearch']: ",
+      "Claims Processing": "Failed to process claim: ",
+      "Patient Selection: Double-click patient row": "Could not double-click //body[1]/form[1]/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[4]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/div[3]/table[1]/tbody[1]/tr[1]: ",
+      "Patient Creation: Enter email": "Could not enter text in txtEMail: ",
+      "Patient Creation": "Failed to create patient: "
+    }
+  },
+  {
+    "patient_name": "Christopher Jenkins",
+    "error": 1,
+    "successfully_save": "no",
+    "errors": {
+      "Login": "Failed login: Check you Username and Password."
+    }
+  },
+  {
+    "patient_name": "Sophia Brady",
+    "error": 1,
+    "successfully_save": "no",
+    "errors": {
+      "Login": "Failed login: Check you Username and Password."
+    }
+  },
+  {
+    "patient_name": "Christopher Jenkins",
+    "error": 1,
+    "successfully_save": "no",
+    "errors": {
+      "Claims: Click Referring Physician Search": "Could not click : Referring Physician Search ",
+      "Claims Processing": "Failed to process claim:  Review CPT codes, dates, and diagnoses."
+    }
+  },
+  {
+    "patient_name": "Sophia Brady",
+    "error": 1,
+    "successfully_save": "no",
+    "errors": {
+      "Claims: Click Referring Physician Search": "Could not click : Referring Physician Search ",
+      "Claims Processing": "Failed to process claim:  Review CPT codes, dates, and diagnoses.",
+      "Patient Selection: Double-click patient row": "Could not double-click:  ",
+      "Insurance: Double-click insurance option": "Could not double-click: Insurance Option ",
+      "Insurance Setup": "Failed to set up insurance: "
+    }
+  },
+  {
+    "patient": "Christopher Jenkinss",
+    "status": "Failed",
+    "start_time": "2025-08-05 11:37:27",
+    "end_time": "2025-08-05 11:39:28",
+    "total_minutes": 2.0,
+    "issues": [
+      "Couldn't press button: Double-click patient row",
+      "Couldn't press button: Start new claim",
+      "Failed to process claim - check CPT/diagnosis codes"
+    ]
+  },
+  {
+    "patient": "Christopher Jenkins",
+    "status": "Failed",
+    "start_time": "2025-08-05 12:10:53",
+    "end_time": "2025-08-05 12:12:17",
+    "total_minutes": 1.4,
+    "issues": [
+      "Problem entering info: Enter referring physician",
+      "Failed to process claim - check CPT/diagnosis codes"
+    ]
+  },
+  {
+    "patient": "Sophia Brady",
+    "status": "Failed",
+    "start_time": "2025-08-05 12:16:34",
+    "end_time": "2025-08-05 12:17:43",
+    "total_minutes": 1.1,
+    "issues": [
+      "Couldn't press button: Double-click insurance option",
+      "Failed to set up insurance - check policy details"
+    ]
+  },
+  {
+    "patient": "Jenkins, Christopher",
+    "status": "Failed",
+    "start_time": "2025-08-05 17:27:15",
+    "end_time": "2025-08-05 17:28:38",
+    "total_minutes": 1.4,
+    "issues": [
+      "Referring Doctor Error In claims Section: Not able to Enter value for Referring Doctor. Kindly check the Referring Doctor value our system try to put that value  [ None ]"
+    ]
+  },
+  {
+    "patient": "Jenkins, Christopher",
+    "status": "Failed",
+    "start_time": "2025-08-05 17:44:13",
+    "end_time": "2025-08-05 17:44:16",
+    "total_minutes": 0.1,
+    "issues": [
+      "Login"
+    ]
+  },
+  {
+    "patient": "Brady, Sophia",
+    "status": "Failed",
+    "start_time": "2025-08-05 17:48:49",
+    "end_time": "2025-08-05 17:49:58",
+    "total_minutes": 1.1,
+    "issues": [
+      "Error in Insurance section: Now able to Double-click insurance option. Kindly check the Patient Insurance value our system try to put that value  [ Superior Healthplan Tx ]"
+    ]
+  },
+  {
+    "patient": "Jenkins, Christopher",
+    "status": "Failed",
+    "start_time": "2025-08-06 12:05:44",
+    "end_time": "2025-08-06 12:06:58",
+    "total_minutes": 1.2,
+    "issues": [
+      "Master Physician Error In claims Section: Not able to Select Master Physician. Kindly check the Master Physician value our system try to put that value  [ Natasha ]"
+    ]
+  },
+  {
+    "patient": "Brady, Sophia",
+    "status": "Failed",
+    "start_time": "2025-08-06 12:10:54",
+    "end_time": "2025-08-06 12:11:55",
+    "total_minutes": 1.0,
+    "issues": [
+      "Error in Insurance section: Now able to Double-click insurance option. Kindly check the Patient Insurance value our system try to put that value  [ Superior Healthplan Tx ]"
+    ]
+  },
+  {
+    "patient": "Jenkins, Christopher",
+    "status": "Failed",
+    "start_time": "2025-08-06 12:37:02",
+    "end_time": "2025-08-06 12:38:11",
+    "total_minutes": 1.1,
+    "issues": [
+      "Master Physician Error In claims Section: Not able to Select Master Physician. Kindly check the Master Physician value our system try to put that value  [ Natasha ]"
+    ]
+  },
+  {
+    "patient": "Brady, Sophia",
+    "status": "Failed",
+    "start_time": "2025-08-06 12:42:04",
+    "end_time": "2025-08-06 12:43:07",
+    "total_minutes": 1.1,
+    "issues": [
+      "Error in Insurance section: Now able to Double-click insurance option. Kindly check the Patient Insurance value our system try to put that value  [ Superior Healthplan ]"
+    ]
+  },
+  {
+    "patient": "Jenkins, Christopher",
+    "status": "Failed",
+    "start_time": "2025-08-06 13:04:10",
+    "end_time": "2025-08-06 13:05:19",
+    "total_minutes": 1.1,
+    "issues": [
+      "Master Physician Error In claims Section: Not able to Select Master Physician. Kindly check the Master Physician value our system try to put that value  [ Simmons ]"
+    ]
+  },
+  {
+    "patient": "Brady, Sophia",
+    "status": "Failed",
+    "start_time": "2025-08-06 13:09:47",
+    "end_time": "2025-08-06 13:10:45",
+    "total_minutes": 1.0,
+    "issues": [
+      "Error in Insurance section: Now able to Double-click insurance option. Kindly check the Patient Insurance value our system try to put that value  [ Superior Healthplan Tx ]"
+    ]
+  },
+  {
+    "patient": "Jenkins, Christopher",
+    "status": "Failed",
+    "start_time": "2025-08-06 13:18:27",
+    "end_time": "2025-08-06 13:19:37",
+    "total_minutes": 1.2,
+    "issues": [
+      "Master Physician Error In claims Section: Not able to Select Master Physician. Kindly check the Master Physician value our system try to put that value  [ Natasha ]"
+    ]
+  },
+  {
+    "patient": "Brady, Sophia",
+    "status": "Failed",
+    "start_time": "2025-08-06 13:23:47",
+    "end_time": "2025-08-06 13:24:43",
+    "total_minutes": 0.9,
+    "issues": [
+      "Error in Insurance section: Now able to Double-click insurance option. Kindly check the Patient Insurance value our system try to put that value  [ Superior Healthplan ]"
+    ]
+  },
+  {
+    "patient": "Jenkins, Alyssa",
+    "status": "Failed",
+    "start_time": "2025-08-06 13:40:56",
+    "end_time": "2025-08-06 13:42:45",
+    "total_minutes": 1.8,
+    "issues": [
+      "Patient Selection: Double-click patient row",
+      "Error in Insurance section: Now able to Double-click insurance option. Kindly check the Patient Insurance value our system try to put that value  [ United Healthcare ]"
+    ]
+  },
+  {
+    "patient": "STEPHENS, ROBIN",
+    "status": "Failed",
+    "start_time": "2025-08-06 13:46:56",
+    "end_time": "2025-08-06 13:48:41",
+    "total_minutes": 1.8,
+    "issues": [
+      "Patient Selection: Double-click patient row",
+      "Error in Insurance section: Now able to Double-click insurance option. Kindly check the Patient Insurance value our system try to put that value  [ Medicare ]"
+    ]
+  },
+  {
+    "patient": "Solorzano, Constantino",
+    "status": "Failed",
+    "start_time": "2025-08-06 13:52:56",
+    "end_time": "2025-08-06 13:53:53",
+    "total_minutes": 0.9,
+    "issues": [
+      "Patient Selection: Double-click patient row",
+      "Error Creating New Patinet: Not able to Enter Patient Email Address. Kindly check the Patient Email Address value our system try to put that value  [ None ]Email",
+      "Patient Creation"
+    ]
+  },
+  {
+    "patient": "Potter, Carla",
+    "status": "Failed",
+    "start_time": "2025-08-06 13:58:28",
+    "end_time": "2025-08-06 14:00:13",
+    "total_minutes": 1.8,
+    "issues": [
+      "Patient Selection: Double-click patient row",
+      "Error in Insurance section: Now able to Double-click insurance option. Kindly check the Patient Insurance value our system try to put that value  [ Medicare ]"
+    ]
+  }
+]

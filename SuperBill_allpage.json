@@ -1,0 +1,366 @@
+{
+    "pages": [
+        {
+            "encounter": {
+                "balance": "$25.00",
+                "bill_id": "09-4538-DBHGBH9-E8",
+                "copay": "$0.00",
+                "coverage_type": "Medical",
+                "encounter_date": "06/05/2025",
+                "paid": "$0.00",
+                "printed_date": "06/16/2025"
+            },
+            "facility": {
+                "address": "201 Amanda Lane, Suite 100, Waxahachie, TX 75165",
+                "fax": "(214) 919-0152",
+                "name": "HandS Healthcare",
+                "phone": "(214) 716-0117"
+            },
+            "insurance": {
+                "copay_amount": "$0",
+                "insurance_id": "730703571",
+                "relation_to_insured": "Self",
+                "start_date": "06/02/22",
+                "subscriber": {
+                    "address": "307 S. Kerr, Blooming Grove, TX 76626",
+                    "dob": "01/10/2019",
+                    "gender": "Male",
+                    "name": "Christopher Jenkins"
+                },
+                "type": "Other"
+            },
+            "patient": {
+                "address": "307 S. Kerr, Blooming Grove, TX 76626",
+                "age": "6 yrs",
+                "dob": "01/10/2019",
+                "name": "Christopher Jenkins",
+                "prn": "JC419211",
+                "sex": "Male"
+            },
+            "provider": {
+                "location": "HandS Healthcare",
+                "name": "Natasha Simmons",
+                "npi": "1568686079"
+            },
+            "service": {
+                "amount": "$25.00",
+                "code": "99214",
+                "date_range": "06/05/2025 - 06/05/2025",
+                "description": "Office or other outpatient visit for the evaluation and management of an established patient, which requires at least 2 of these 3 key components: A detailed history; A detailed examination; Medical decision making of moderate complexity. Counseling and/or coordination of care with other physicians, other qualified health care professionals, or agencies are provided consistent with the nature of the problem(s) and the patient's and/or family's needs. Usually, the presenting problem(s) are of moderate to high severity. Typically, 25 minutes are spent face-to-face with the patient and/or family.",
+                "diagnoses": [
+                    {
+                        "code": "F90.2",
+                        "description": "Attention-deficit hyperactivity disorder, combined type"
+                    },
+                    {
+                        "code": "G47.00",
+                        "description": "Insomnia, unspecified"
+                    }
+                ],
+                "modifier": "GT",
+                "place_of_service": "11 - Office",
+                "qty": 1
+            }
+        },
+        {
+            "encounter": {
+                "balance": "$125.00",
+                "bill_id": "09-4538-QLFH7MX-0D",
+                "copay": "$0.00",
+                "coverage_type": "Medical",
+                "encounter_date": "06/05/2025",
+                "paid": "$0.00",
+                "printed_date": "06/16/2025"
+            },
+            "facility": {
+                "address": "201 Amanda Lane, Suite 100, Waxahachie, TX 75165",
+                "fax": "(214) 919-0152",
+                "name": "HandS Healthcare",
+                "phone": "(214) 716-0117"
+            },
+            "insurance": {
+                "copay_amount": "$0",
+                "insurance_id": "530192612",
+                "relation_to_insured": "Self",
+                "start_date": "08/01/19",
+                "subscriber": {
+                    "address": "",
+                    "dob": "11/19/2009",
+                    "gender": "Female",
+                    "name": "Sophia Brady"
+                },
+                "type": "Other"
+            },
+            "patient": {
+                "address": "3064 Carlton Parkway, Waxahachie, TX 75165",
+                "age": "15 yrs",
+                "dob": "11/19/2009",
+                "name": "Sophia Brady",
+                "prn": "BS978989",
+                "sex": "Female"
+            },
+            "provider": {
+                "location": "HandS Healthcare",
+                "name": "Natasha Simmons",
+                "npi": "1568686079"
+            },
+            "service": {
+                "amount": "$125.00",
+                "code": "99214",
+                "date_range": "06/05/2025 - 06/05/2025",
+                "description": "Office or other outpatient visit for the evaluation and management of an established patient, which requires at least 2 of these 3 key components: A detailed history; A detailed examination; Medical decision making of moderate complexity. Counseling and/or coordination of care with other physicians, other qualified health care professionals, or agencies are provided consistent with the nature of the problem(s) and the patient's and/or family's needs. Usually, the presenting problem(s) are of moderate to high severity. Typically, 25 minutes are spent face-to-face with the patient and/or family.",
+                "diagnoses": [
+                    {
+                        "code": "F90.2",
+                        "description": "Attention-deficit hyperactivity disorder, combined type"
+                    }
+                ],
+                "modifier": "GT",
+                "place_of_service": "11 - Office",
+                "qty": 1
+            }
+        },
+        {
+            "encounter": {
+                "balance": "$125.00",
+                "bill_id": "09-4538-34VQJ8B-A5",
+                "copay": "$40.00",
+                "coverage_type": "Medical",
+                "encounter_date": "06/05/2025",
+                "paid": "$0.00",
+                "printed_date": "06/16/2025"
+            },
+            "facility": {
+                "address": "201 Amanda Lane, Suite 100, Waxahachie, TX 75165",
+                "fax": "(214) 919-0152",
+                "name": "HandS Healthcare",
+                "phone": "(214) 716-0117"
+            },
+            "insurance": {
+                "copay_amount": "$40",
+                "insurance_id": "129344032",
+                "relation_to_insured": "Self",
+                "start_date": "08/01/24",
+                "subscriber": {
+                    "address": "315 North Garitty, Frost, TX 76641",
+                    "dob": "07/29/1993",
+                    "gender": "Female",
+                    "name": "Alyssa Jenkins"
+                },
+                "type": "Other"
+            },
+            "patient": {
+                "address": "315 North Garitty, Frost, TX 76641",
+                "age": "31 yrs",
+                "dob": "07/29/1993",
+                "name": "Alyssa Jenkins",
+                "prn": "JA754508",
+                "sex": "Female"
+            },
+            "provider": {
+                "location": "HandS Healthcare",
+                "name": "Natasha Simmons",
+                "npi": "1568686079"
+            },
+            "service": {
+                "amount": "$125.00",
+                "code": "99214",
+                "date_range": "06/05/2025 - 06/05/2025",
+                "description": "Office or other outpatient visit for the evaluation and management of an established patient, which requires at least 2 of these 3 key components: A detailed history; A detailed examination; Medical decision making of moderate complexity. Counseling and/or coordination of care with other physicians, other qualified health care professionals, or agencies are provided consistent with the nature of the problem(s) and the patient's and/or family's needs. Usually, the presenting problem(s) are of moderate to high severity. Typically, 25 minutes are spent face-to-face with the patient and/or family.",
+                "diagnoses": [
+                    {
+                        "code": "F32.1",
+                        "description": "Major depressive disorder, single episode, moderate"
+                    },
+                    {
+                        "code": "F90.9",
+                        "description": "Attention-deficit hyperactivity disorder, unspecified type"
+                    }
+                ],
+                "modifier": "GT",
+                "place_of_service": "11 - Office",
+                "qty": 1
+            }
+        },
+        {
+            "encounter": {
+                "balance": "",
+                "bill_id": "FIN: 500842925",
+                "copay": "",
+                "coverage_type": "",
+                "encounter_date": "04/09/2025",
+                "paid": "",
+                "printed_date": ""
+            },
+            "facility": {
+                "address": "",
+                "fax": "",
+                "name": "Encompass Health Rehabilitation Hospital of the Mid-Cities",
+                "phone": "(817) 684-2000"
+            },
+            "insurance": {
+                "copay_amount": "",
+                "insurance_id": "3QC9A15GV26",
+                "relation_to_insured": "Self",
+                "start_date": "",
+                "subscriber": {
+                    "address": "1305 KINWEST PKWY, IRVING, TX 75063-3404",
+                    "dob": "08/07/1944",
+                    "gender": "Male",
+                    "name": "STEPHENS, ROBIN E"
+                },
+                "type": "Medicare"
+            },
+            "patient": {
+                "address": "1305 KINWEST PKWY, IRVING, TX 75063-3404",
+                "age": "80 yrs",
+                "dob": "08/07/1944",
+                "mrn": "875003209",
+                "name": "STEPHENS, ROBIN E",
+                "sex": "Male"
+            },
+            "provider": {
+                "location": "Encompass Health Rehabilitation Hospital of the Mid-Cities",
+                "name": "Maduri DO, Prathusha",
+                "npi": ""
+            },
+            "service": {
+                "amount": "",
+                "code": "",
+                "date_range": "04/09/2025 - ",
+                "description": "ORH Orthopedic - HIP",
+                "diagnoses": [
+                    {
+                        "code": "",
+                        "description": "L FEMORAL NECK FX"
+                    }
+                ],
+                "modifier": "",
+                "place_of_service": "Inpatient",
+                "qty": ""
+            }
+        },
+        {
+            "encounter": {
+                "admit_dt_tm": "04/07/2025 16:13",
+                "admit_reason": "MDD/WEAKNESS/DM",
+                "attend_physician": "Muppidi MD, Madhavi R",
+                "encounter_date": "04/07/2025",
+                "fin": "500837913",
+                "printed_date": "04/07/2025"
+            },
+            "facility": {
+                "address": "",
+                "fax": "",
+                "name": "Encompass Health Rehabilitation Hospital of the Mid-Cities",
+                "phone": "(817) 684-2000"
+            },
+            "insurance": {
+                "copay_amount": "",
+                "insurance_id": "1GK1KQ1VA07",
+                "relation_to_insured": "Self",
+                "start_date": "",
+                "subscriber": {
+                    "address": "2106 15TH ST APT 303, BRIDGEPORT, TX 76426",
+                    "dob": "09/01/1955",
+                    "gender": "Male",
+                    "name": "SOLORZANO, CONSTANTINO E"
+                },
+                "type": "Medicare"
+            },
+            "patient": {
+                "address": "2106 15TH ST APT 303, BRIDGEPORT, TX 76426",
+                "age": "69 yrs",
+                "dob": "09/01/1955",
+                "mrn": "875003188",
+                "name": "SOLORZANO, CONSTANTINO E",
+                "sex": "Male"
+            },
+            "provider": {
+                "location": "Encompass Health Rehabilitation Hospital of the Mid-Cities",
+                "name": "Muppidi MD, Madhavi R",
+                "npi": ""
+            },
+            "service": {
+                "amount": "",
+                "code": "",
+                "date_range": "04/07/2025 - 04/07/2025",
+                "description": "",
+                "diagnoses": [],
+                "modifier": "",
+                "place_of_service": "",
+                "qty": ""
+            }
+        },
+        {
+            "encounter": {
+                "admit_dt_tm": "04/08/2025 14:42",
+                "admit_reason": "DIASTOLIC CHF/ S/P R",
+                "balance": "",
+                "copay": "",
+                "coverage_type": "",
+                "encounter_date": "04/08/2025",
+                "fin": "500839341",
+                "paid": "",
+                "printed_date": "04/08/2025"
+            },
+            "facility": {
+                "address": "",
+                "fax": "",
+                "name": "Encompass Health Rehabilitation Hospital of the Mid-Cities",
+                "phone": "(817) 684-2000"
+            },
+            "insurance": {
+                "copay_amount": "",
+                "insurance_id": "1VT3WX1QH19",
+                "relation_to_insured": "Self",
+                "secondary_insurance": {
+                    "copay_amount": "",
+                    "insurance_id": "85073995",
+                    "relation_to_insured": "",
+                    "start_date": "",
+                    "subscriber": {
+                        "address": "",
+                        "dob": "",
+                        "gender": "",
+                        "name": ""
+                    },
+                    "type": "Non-Contracted"
+                },
+                "start_date": "",
+                "subscriber": {
+                    "address": "2248 Mountainview Dr, Hurst, TX 76054",
+                    "dob": "01/25/1951",
+                    "gender": "Female",
+                    "name": "Carla A Potter"
+                },
+                "type": "Medicare"
+            },
+            "patient": {
+                "address": "2248 Mountainview Dr, Hurst, TX 76054",
+                "age": "74 Years",
+                "dob": "01/25/1951",
+                "mrn": "875003195",
+                "name": "Carla A Potter",
+                "sex": "Female"
+            },
+            "provider": {
+                "location": "Encompass Health Rehabilitation Hospital of the Mid-Cities",
+                "name": "Eastburn MD, Britton Mcfarland",
+                "npi": ""
+            },
+            "service": {
+                "amount": "",
+                "code": "",
+                "date_range": "",
+                "description": "",
+                "diagnoses": [],
+                "modifier": "",
+                "place_of_service": "",
+                "qty": ""
+            }
+        }
+    ],
+    "report_type": "superbill",
+    "success": true
+}
