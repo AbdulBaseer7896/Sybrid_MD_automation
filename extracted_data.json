@@ -1,0 +1,27 @@
+{
+  "patient": {
+    "last_name": "Jenkins",
+    "first_name": "Christopher",
+    "address": "307 S. Kerr, Blooming Grove, TX 76626",
+    "email": null,
+    "sex": "Male",
+    "dob": "01/10/2019",
+    "zipcode": "76626"
+  },
+  "insurance": {
+    "carrier_initial": "a",
+    "policy_number": "730703571"
+  },
+  "claims": {
+    "physician_initial": "n",
+    "referring_initial": null,
+    "facility_initial": "h",
+    "from_date": "06/05/2025",
+    "to_date": "06/05/2025",
+    "cpt_code": "99214"
+  },
+  "diagnoses": {
+    "txt__DIAG1": "F90.2",
+    "txt__DIAG2": "G47.00"
+  }
+}

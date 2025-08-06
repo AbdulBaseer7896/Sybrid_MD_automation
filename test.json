@@ -1,0 +1,38 @@
+{
+    "patient": {
+        "first_name": "Christopher",
+        "last_name": "Jenkins",
+        "address": "307 S. Kerr, Blooming Grove, TX 76626",
+        "sex": "Male",
+        "dob": "06/16/2005",
+        "zipcode": "75165"
+    },
+    "insurance": {
+        "carrier": "AMERIGROUP",
+        "policy_number": "aa7oasr1",
+        "group_number": "ovia2019",
+        "subscriber_name": "Christopher Jenkins"
+    },
+    "claims": {
+        "date_of_service": "06/05/2025",
+        "place_of_service": "11 -Office",
+        "cpt_code": "99214",
+        "diagnoses": [
+            {
+                "code": "F90.2",
+                "description": "Attention-deficit hyperactivity disorder, combined type"
+            },
+            {
+                "code": "G47.00",
+                "description": "Insomnia, unspecified"
+            }
+        ],
+        "balance": 125.00,
+        "copay": 0.00,
+        "pad": 0.00
+    },
+    "provider": {
+        "rendering_provider": "Natasha Simmons",
+        "billing_provider": "Natasha Simmons"
+    }
+}
