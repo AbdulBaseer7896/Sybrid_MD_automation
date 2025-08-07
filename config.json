@@ -1,0 +1,31 @@
+{
+    "credentials": {
+        "username": "NAYAB.GUL",
+        "password": "Nayab123"
+    },
+    "patient": {
+        "last_name": "Ali",
+        "first_name": "Hassan",
+        "address": "307 S. Kerr, Blooming Grove, TX 76626 new updated",
+        "email": "",
+        "sex": "Male",
+        "dob": "01/10/2019",
+        "zipcode": "76626"
+    },
+    "insurance": {
+        "carrier_initial": "AETNA",
+        "policy_number": "730703571"
+    },
+    "claims": {
+        "physician_initial": "tramontano",
+        "referring_initial": "doe",
+        "facility_initial": "abc",
+        "from_date": "07/25/2025",
+        "to_date": "07/30/2025",
+        "cpt_code": "99214"
+    },
+    "diagnoses": {
+        "txt__DIAG1": "F90.2",
+        "txt__DIAG2": "F313"
+    }
+}

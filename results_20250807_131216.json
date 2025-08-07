@@ -1,0 +1,48 @@
+[
+  {
+    "page": 1,
+    "success": true,
+    "data": {
+      "patient": {
+        "last_name": "Jenkins",
+        "first_name": "Alyssa",
+        "address": "315 North Garitty, Frost, TX 76641",
+        "email": "",
+        "sex": "Female",
+        "dob": "07/29/1993",
+        "zipcode": "76641"
+      },
+      "insurance": {
+        "carrier_initial": "United Healthcare",
+        "policy_number": "129344032"
+      },
+      "claims": {
+        "physician_initial": "Simmons",
+        "referring_initial": "",
+        "facility_initial": "HandS",
+        "from_date": "06/05/2025",
+        "to_date": "06/05/2025",
+        "cpt_code": "99214"
+      },
+      "diagnoses": {
+        "txt__DIAG1": "F32.1",
+        "txt__DIAG2": "F90.9"
+      }
+    }
+  },
+  {
+    "page": 2,
+    "success": false,
+    "error": "Error 400: {\"error\":\"vk::Device::getFenceStatus: ErrorDeviceLost\"}"
+  },
+  {
+    "page": 3,
+    "success": false,
+    "error": "Error 400: {\"error\":\"vk::Queue::submit: ErrorDeviceLost\"}"
+  },
+  {
+    "page": 4,
+    "success": false,
+    "error": "Error 400: {\"error\":\"\"}"
+  }
+]

@@ -152,6 +152,7 @@ def enter_text(driver, by, value, text, context="Unknown", box_name="", timeout=
             element.send_keys(Keys.ENTER)
         print(f"⌨️ Entered info in: {box_name or value}")
     except Exception as e:
+        print("this is also e = " , e)
         record_error(context, f"Could not enter text in: {box_name or value}")
         raise
 
@@ -162,6 +163,7 @@ def select_dropdown(driver, by, value, visible_text, context="Unknown", box_name
         Select(element).select_by_visible_text(visible_text)
         print(f"✅ Selected option: {box_name or value}")
     except Exception as e:
+        print("this is he 3 = =e = " ,e)
         record_error(context, f"Could not select dropdown: {box_name or value}")
         raise
 
@@ -376,7 +378,14 @@ def run_automation(config:dict):
             enter_text(driver, By.ID, "txtPassword", PASSWORD, f"Login Failed, In Password your System try to Enter that value [{PASSWORD}]", "Password Field")
             time.sleep(2)
             click(driver, By.ID, "button1", "Login Failed: Checked you userName and password our System try to Enter that values User_Name = '{USER_NAME}' , Password = '{PASSWORD}'.", "Login Button")
-            time.sleep(10)
+            time.sleep(2)
+            select_dropdown(driver, By.ID, "selPractice", "ABC Practice", 
+                                    f"Login Failed: Not able to Select Practice. Kindly check will Practice is present in the system or not our system put that value [ABC Practice]", "Location Selection")
+            select_dropdown(driver, By.ID, "selLocation", "Office", 
+                                    f"Login Failed: Not able to Select location Office. Kindly check will location office is present in the system or not", "Location Selection")
+            click(driver, By.ID, "button1", "Login Failed: Checked you location and Practice our System try to Enter that values User_Name = '{USER_NAME}' , Password = '{PASSWORD}'.", "ok Login Button")
+            time.sleep(2)
+
         except Exception as e:
             record_error("Login", "Failed login: Check username/password")
             raise
@@ -433,6 +442,55 @@ def run_automation(config:dict):
             except Exception as e:
                 # record_error("Patient Selection", "Could not find or add patient")
                 raise
+
+
+                # ====== NEW SECTION: Update existing patient details ======
+        if not new_patient:
+            try:
+                # Click Edit button to enable editing
+                click(driver, By.ID, "tdEdit", 
+                        "Patient Update: Click Edit button", "Edit Button")
+                time.sleep(2)
+
+                patient_data = config["patient"]
+                
+                # Function to check and update field if changed
+                def update_field(field_id, config_key, field_name):
+                    current_value = driver.find_element(By.ID, field_id).get_attribute("value")
+                    if current_value != patient_data[config_key]:
+                        enter_text(driver, By.ID, field_id, patient_data[config_key], 
+                                    f"Patient Update: Update {field_name}", field_name)
+                        print(f"🔄 Updated {field_name}: {patient_data[config_key]}")
+                        return True
+                    return False
+                
+                # Check and update phone number
+                if 'phone' in patient_data:
+                    update_field("txtPhone", "phone", "Phone Number")
+                
+                # Check and update ZIP code
+                if 'zipcode' in patient_data:
+                    if update_field("txtZip", "zipcode", "ZIP Code"):
+                        accept_alert(driver, "Patient Update: Handle ZIP alert", box_name="ZIP Alert")
+                
+                # Check and update address
+                if 'address' in patient_data:
+                    update_field("txtAddress", "address", "Address")
+                
+                # Save changes if any field was updated
+                if any(k in patient_data for k in ['phone', 'zipcode', 'address']):
+                    click(driver, By.XPATH, "//a[normalize-space()='Save']", 
+                            "Patient Update: Save updated details", "Save Button")
+                    time.sleep(2)
+                    accept_alert(driver, "Patient Update: Handle save alert", box_name="Save Alert")
+                    print("✅ Patient details updated")
+                else:
+                    print("ℹ️ No patient details changed - skipping update")
+                    
+            except Exception as e:
+                record_error("Patient Update", f"Failed to update patient details: {str(e)}")
+                print("⚠️ Continuing process after update error")
+        # ====== END OF UPDATE SECTION ======
         
         # New patient creation
         if new_patient:
@@ -537,13 +595,17 @@ def run_automation(config:dict):
                 "Claims section Error In claims Section: Kindly Run it again or contact with your Software Developer. Claims: Start new claim", "New Claim Button")
         time.sleep(5)
 
-        
+        print("this is the 1 " ,driver.current_url)        
         WebDriverWait(driver, 10).until(lambda d: len(d.window_handles) > 1)
         time.sleep(2)
         new_tab = [h for h in driver.window_handles if h != driver.current_window_handle][1]
         time.sleep(2)
         driver.switch_to.window(new_tab)
-        switch_window(driver, 3, "Claims section Error In claims Section: Kindly Run it again or contact with your Software Developer. Claims: Switch back", "Claims Window")
+        # switch_window(driver, 3, "Claims section Error In claims Section: Kindly Run it again or contact with your Software Developer. Claims: Switch back", "Claims Window")
+        time.sleep(2)
+        print("this is the 2 " ,driver.current_url) 
+
+        
 
         
         # Claims entry process
@@ -564,11 +626,13 @@ def run_automation(config:dict):
         click(driver, By.XPATH, "//input[@id='btnRefSearch']", 
                 f"Referring Doctor Error In claims Section: Not able to Click on Facility search button. Kindly check the Referring Doctor value our system try to put that value  [ {config['claims']['referring_initial']} ]", "Referring Physician Button")
         time.sleep(5)
+        switch_window(driver, 3, "Claims section Error In claims Section: Kindly Run it again or contact with your Software Developer. Claims: Switch back", "Claims Window")
+
 
 
             
         # Switch to new window for referring physician
-        switch_window(driver, 3, "Claims section Error In claims Section: Kindly Run it again or contact with your Software Developer. Claims: Referring physician", "Referring Physician Window")
+
         time.sleep(2)
         
         enter_text(driver, By.ID, "txtRefPhysician", config["claims"]["referring_initial"], 
@@ -698,8 +762,32 @@ def run_automation(config:dict):
         
         # Save claim
         click(driver, By.ID, "but_AddSer", " Claims section Error In claims Section: Kindly Run it again or contact with your Software Developer. Claims: Click Add Service", "Add Service Button")
-        time.sleep(2)
-        accept_alert(driver, "Claims section Error In claims Section: Kindly Run it again or contact with your Software Developer.  Claims: Handle add service alert", box_name="Service Alert")
+        time.sleep(20)
+        # accept_alert(driver, "Claims section Error In claims Section: Kindly Run it again or contact with your Software Developer.  Claims: Handle add service alert", box_name="Service Alert")
+
+
+        try:
+            WebDriverWait(driver, 5).until(EC.alert_is_present())
+
+            alert = driver.switch_to.alert
+            alert_text = alert.text
+
+            print(f"Alert text: {alert_text}")
+            
+            if "This service has already been entered before!" in alert_text:
+                alert.dismiss()  # or just do nothing if you want to "stop"
+                # print("Alert detected and dismissed due to matching text.")
+                record_error(f"Failed Adding Claims:  This service(Claims) has already been entered before", "Failed to enter CPT code properly.")
+
+            else:
+                alert.accept()
+                print("Alert accepted.")
+        except TimeoutException:
+            print("No alert appeared.")
+
+        except NoAlertPresentException:
+            print("No alert found.")
+
         time.sleep(2)
         click(driver, By.XPATH, "//button[contains(@onclick, 'SaveClaims')]", 
                 "Claims section Error In claims Section: Kindly Run it again or contact with your Software Developer.  Claims: Click Save Claim", "Save Claim Button")

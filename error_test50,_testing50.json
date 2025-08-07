@@ -1,0 +1,7 @@
+{
+    "patient": "test50, testing50",
+    "errors": {
+        "Login Failed: Checked you userName and password our System try to Enter that values User_Name = '{USER_NAME}' , Password = '{PASSWORD}'.": "Login failed: Check username/password in .env file",
+        "Login": "Login failed: Check username/password in .env file"
+    }
+}
